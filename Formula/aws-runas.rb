@@ -5,9 +5,10 @@ class AwsRunas < Formula
   sha256 "4b1e3fe48e470d0705c0d3064aaa0fbb32086976b007137478e5a8499053ab77"
 
   bottle do
+    root_url "https://dl.bintray.com/bram2000/bottles-custom"
     cellar :any_skip_relocation
-    root_url "https://bintray.com/bram2000/bottles"
-    sha256 "17be8dd502372ef5c441569bfff6b5f286f313436d6f7195a35032bf199f1304" => :mojave
+    rebuild 1
+    sha256 "8ad4bd4c1b1a7a15f5ed4b2858316e21f51cd85b59eb29ae072472243879c65b" => :mojave
   end
 
   depends_on "go" => :build
