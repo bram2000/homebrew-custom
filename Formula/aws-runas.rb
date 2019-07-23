@@ -11,6 +11,11 @@ class AwsRunas < Formula
     bin.install "aws-runas"
   end
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "17be8dd502372ef5c441569bfff6b5f286f313436d6f7195a35032bf199f1304" => :mojave
+  end
+
   test do
     system bin/"aws-runas", "--help"
   end
