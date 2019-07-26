@@ -7,8 +7,8 @@ class AwsRunas < Formula
   bottle do
     root_url "https://dl.bintray.com/bram2000/bottles-custom"
     cellar :any_skip_relocation
-    rebuild 2
-    sha256 "984bf903ebb3f2e03555dc4cbef19b63c63f415abb55a4fb16ddbcb046c2c9cd" => :mojave
+    rebuild 3
+    sha256 "5508645f1353341a972d87d19a24e6e82033844708e62fe4700eeda4b794946b" => :mojave
   end
 
   depends_on "go" => :build
